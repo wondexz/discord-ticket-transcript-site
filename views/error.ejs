@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hata - Aurora</title>
+    <link rel="icon" type="image/png" href="https://cdn.wondexz.com/image/aurora.png">
+    <meta property="og:title" content="404 - Aurora">
+    <meta name="og:description" content="Sunucunuz için bir asistan.">
+    <meta property="og:image" content="https://cdn.wondexz.com/image/aurora.png">
+    <meta property="og:url" content="https://aurora.xyz">
+    <meta name="theme-color" content="#5a4fcf">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+        ntegrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <link rel='stylesheet' href="./assets/css/style.css">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function () {
+            twemoji.parse(document.body,
+                { folder: 'svg', ext: '.svg' }
+            );
+        }
+    </script>
+    <style>
+        img.emoji {
+            width: 1em;
+            pointer-events: none;
+            display: inline-block;
+        }
+    </style>
+<style>
+        @import"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+
+:root {
+    --primaryColor: #131415;
+    --secondaryColor: #5a4fcf;
+    --tertiaryColor: #4fcfca;
+    --quaColor: #303236
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+button:focus {
+    outline: none
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: "Inter";
+    transition: all 0.1s linear;
+    background-color: var(--primaryColor)
+}
+
+img {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+a:hover {
+    text-decoration: none;
+    color: unset !important
+}
+
+br {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+@media only screen and (min-width: 640px) {
+    .section {
+        padding-top: 3%;
+        padding-bottom: 3%
+    }
+    .blackText {
+        font-size: 55px
+    }
+    .sectionGrid {
+        display: grid;
+        align-items:center;
+        grid-template-columns: auto auto;
+        grid-gap: 6%;
+    }
+
+    .sectionGridItemRight {
+        justify-self: end
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 4rem
+    }
+    .blackText {
+        font-size: 40px
+    }
+    .sectionGridItemRight {
+        padding-top: 1em
+    }
+    .sidebar {
+        background-color: var(--primaryColor)
+    }
+}
+
+nav {
+    /*background-color: var(--primaryColor);*/
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px)
+}
+
+.blackText {
+    font-weight: 800;
+    line-height: 1.2em
+}
+
+.extraBoldText {
+    font-weight: 800;
+    font-size: 35px
+}
+
+.boldText {
+    font-weight: 500;
+    font-size: 25px
+}
+
+.regularTextBold {
+    font-weight: 600;
+    font-size: 23px
+}
+
+.regularTextIta {
+    font-weight: 400;
+    font-size: 20px
+}
+
+.regularText {
+    font-weight: 500;
+    font-size: 20px
+}
+
+.normalTextBold {
+    font-weight: 600;
+    font-size: 16px
+}
+
+.normalText {
+    font-weight: 500;
+    font-size: 16px
+}
+
+.smallTextBold {
+    font-weight: 600;
+    font-size: 16px
+}
+
+.smallText {
+    font-weight: 400;
+    font-size: 16px
+}
+
+.gradientBg {
+    background-image: linear-gradient(to right, var(--secondaryColor) , var(--tertiaryColor))
+}
+
+.blackBg {
+    background-color: #000;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear
+}
+
+.secBg {
+    background-color: transparent;
+    transition: all 0.3s linear
+}
+
+.secBg:hover {
+    background-color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear
+}
+
+.blackBg:hover {
+    background-color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear
+}
+
+.coloredBg:hover {
+    background-color: var(--secondaryColor)
+}
+
+.gradientColor {
+    background: linear-gradient(to right, var(--secondaryColor) , var(--tertiaryColor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.gradientUnderlineWH {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: var(--secondaryColor)
+}
+
+.gradientUnderline:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: var(--secondaryColor)
+}
+
+.whiteUnderline:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: white
+}
+
+.customHr {
+    border: 1px solid var(--quaColor);
+    opacity: 70%
+}
+
+.card {
+    border-top: 1px solid var(--quaColor)
+}
+
+.cardWBg {
+    background-color: #2c2c30;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+}
+
+.sidebar {
+    border-right: 1px solid var(--quaColor)
+}
+
+.blackBgActive {
+    background-color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    color: #000
+}
+
+.blackBgActive {
+    background-color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear
+}
+    </style>
+</head>
+
+<body oncontextmenu="return false;" class="container max-w-10xl mx-auto">
+
+    <nav class="sticky w-full z-20 top-0 left-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="/" class="flex items-center">
+                <img src="https://cdn.wondexz.com/image/aurora.png" draggable="false" class="h-7 mr-3" alt="IMG">
+                <span class="regularTextBold text-white self-center whitespace-nowrap">Aurora</span>
+            </a>
+            <div class="flex md:order-2">
+                <a onClick="openPage('https://discord.com/oauth2/authorize?client_id=1165702340855210034&permissions=8&scope=bot%20applications.commands')" target="_blank"><button type="button"
+                        class="normalTextBold text-black gradientBg rounded-full px-6 py-3 text-center mr-3 md:mr-0"><i class="fa-brands fa-discord mr-2"></i> Sunucuna ekle</button></a>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 text-white rounded-xl md:hidden coloredBg aria-controls="
+                    navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="text-white flex flex-col p-4 md:p-0 mt-4 border border-gray-800 rounded-xl md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                    <li>
+                        <a href="./"
+                            class="normalText text-white whiteUnderline block py-2 pl-3 pr-6 rounded md:hover:bg-transparent md:p-0"><i class="fa-regular fa-house-blank"></i></a>
+                    </li>
+                    <li>
+                        <a href="./#features"
+                            class="normalText text-white whiteUnderline block py-2 pl-3 pr-6 rounded md:hover:bg-transparent md:p-0">Özellikler</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="section">
+        <div class="py-8 px-4 mx-auto max-w-6xl text-center lg:py-16 mt-8">
+           
+            <h1 class="blackText text-white mb-4 tracking-tight leading-none"> <span class="gradientColor">Hata
+            </h1>
+            <p class="regularText text-white opacity-90 mt-8 mb-8 sm:px-16 lg:px-48"><%- err -%></p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                    <svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+            <p class="smallText text-white opacity-90 mt-8 mb-8 sm:px-13 lg:px-48"><span class="mr-2"> <span class="opacity-60">
+                        </span></span> <span class="mr-2">
+                    
+        </div>
+    </section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+<script>
+    setTimeout(function() {
+    window.location.href = "<%- rp -%>";
+    }, 3000);
+</script>
+
+</html>
