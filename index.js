@@ -161,7 +161,7 @@ client.on("interactionCreate", async (interaction) => {
         return crypto.createHash('sha256').update(text).digest('hex');
       }
 
-      const fileName = `${uuidv4()}.html`;
+      const fileName = `${uuidv4()}`;
       const filePath = `./transcripts/${fileName}`;
       
       let contentToWrite = attachment.content || (attachment.attachment ? attachment.attachment.toString() : null);
